@@ -17,6 +17,19 @@ export function seedUserStore() {
     permissions: ['users.list', 'metrics.list'],
     roles: ['editor']
   })
+
+  users.set('ricardo85x@gmail.com', {
+    password: '123456',
+    permissions: ['users.list', 'users.create', 'metrics.list'],
+    roles: ['editor']
+  })
+
+  users.set('pebas@gmail.com', {
+    password: '123456',
+    permissions: ['users.list', 'metrics.list'],
+    roles: ['editor']
+  })
+
 }
 
 export function createRefreshToken(email: string) {
